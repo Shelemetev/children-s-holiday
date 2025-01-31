@@ -1,0 +1,92 @@
+.header {
+    background-color: var(--main-color);
+    padding: calc(var(--indent) * 6) 0;
+    padding-bottom: 21;
+    position: sticky;
+    z-index: 100;
+    top: 0;
+    transition: 0.4s;
+    &--hidden {
+        transform: translateY(-100%);
+    }
+    &::after {
+        content: " ";
+        position: absolute;
+        width: 50%;
+        bottom: 0;
+        height: 3px;
+        border-radius: 15px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: var(--text-color);
+    }
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__menu {
+        
+        background-color: transparent;
+        border: none;
+        &-items {
+            display: flex;
+            gap: var(--gap);
+        }
+        &-link {
+            font-size: var(--text);
+            color: var(--text-color);
+            transition: 0.4s;
+            position: relative;
+            &:hover {
+                color: var(--secondary-color);
+                &::after {
+                    width: 70%;
+                }
+            }
+            &::after {
+                content: " ";
+                position: absolute;
+                width: 0%;
+                height: 1px;
+                left: 50%;
+                transform: translateX(-50%);
+                bottom: -5px;
+                background-color: var(--secondary-color);
+                transition: 0.4s;
+            }
+        }
+    }
+    &__adress {
+        &-img {
+            width: 25px;
+            height: 25px;
+        }
+        &-top {
+            display: flex;
+            gap: calc(var(--indent) * 2);
+            align-items: center;
+        }
+        &-bottom {
+            margin-top: var(--margin-text);
+        }
+        &-tel {
+            color: var(--text-color);
+            transition: 0.4s;
+            font-size: var(--text);
+            &:hover {
+                color: var(--secondary-color);
+            }
+        }
+    }
+}
+
+@keyframes --back-color {
+    0% {
+        background-color: var(--secondary-color);
+    }
+
+    100% {
+        background-color: var(--main-color);
+    }
+}

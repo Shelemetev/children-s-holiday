@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Фаивкон -->
+    <link rel="icon" href="./img/Main_logo.ico" type="image/x-icon" >
+
+    <!-- Normalize.css -->
+    <link rel="stylesheet" href="./css/normalize.css">
+
+    <!-- Шрифты -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Alegreya:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+    <!-- ICONMOON -->
+    <link rel="stylesheet" href="./icomoon-v1.0/style.css">
+
+    <!-- Стили -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Media -->
+    <link rel="stylesheet" href="./css/media.css">
+
+    <title>Детские аниматоры</title>
+</head>
+<body>
+    
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <dialog class="header__menu" id="menu">
+                    <nav>
+                        <ul class="header__menu-items">
+                            <li class="header__menu-item">
+                                <a href="" class="header__menu-link">О нас</a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a href="" class="header__menu-link">Персонажи и герои</a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a href="" class="header__menu-link">Цены</a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a href="" class="header__menu-link">Видео с праздников</a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a href="" class="header__menu-link">Отзывы</a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a href="" class="header__menu-link">Заказать праздник</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </dialog>
+
+                <button class="header__btn" onclick="menu.show()"></button>
+    
+                <address class="header__adress">
+                    <div class="header__adress-top">
+                        <a href="" target="_blank" class="header__adress-link">
+                            <img class="header__adress-img" src="./img/vk.svg" alt="">
+                        </a>
+                        <a href="" target="_blank" class="header__adress-link">
+                            <img class="header__adress-img" src="./img/whatsapp.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="header__adress-bottom">
+                        <a href="tel:+79876543212" target="_blank" class="header__adress-tel">+7 987 654 32 12</a>
+                    </div>
+                </address>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+
+        <section class="basic">
+            <div class="container">
+                <div class="basic__inner">
+                    <header class="basic__header">
+                        <h1 class="basic__title">Детские праздники в городе Хабаровск</h1>
+                    </header>
+                    <footer class="basic__footer">
+                        <p class="basic__text">Создаем яркие и веселые детские праздники - подарите детям сказку</p>
+                        <p class="basic__text">Агенство детских праздников. Аниматоры на день рождения Хабаровск</p>
+                    </footer>
+                    <button class="main-btn basic__btn" onclick="dialog.showModal()">Заказать звонок</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="characters">
+            <div class="container">
+                <div class="characters__inner">
+                    <header class="characters__header">
+                        <h2 class="characters__title">Персонажи наших аниматоров</h2>
+                    </header>
+                    <div class="characters__items">
+                        <a href="#" class="characters__item">
+                            <img src="./img/characters-1.png" alt="" class="characters__item-img">
+                            <header class="characters__item-header">
+                                <h3 class="characters__item-title">Школьный батл</h3>
+                            </header>
+                        </a>
+                        <a href="#" class="characters__item">
+                            <img src="./img/characters-2.png" alt="" class="characters__item-img">
+                            <header class="characters__item-header">
+                                <h3 class="characters__item-title">Масленица</h3>
+                            </header>
+                        </a>
+                        <a href="#" class="characters__item">
+                            <img src="./img/characters-1.png" alt="" class="characters__item-img">
+                            <header class="characters__item-header">
+                                <h3 class="characters__item-title">Гусь-обнимусь</h3>
+                            </header>
+                        </a>
+                        <a href="#" class="characters__item">
+                            <img src="./img/characters-2.png" alt="" class="characters__item-img">
+                            <header class="characters__item-header">
+                                <h3 class="characters__item-title">Гравити Фолз</h3>
+                            </header>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="programm">
+            <div class="container">
+                <div class="programm__inner">
+                    <header class="programm__header">
+                        <h2 class="programm__title">Программы для детского дня рождения</h2>
+                    </header>
+                    <div class="programm__items">
+                        <div class="programm__item">
+                            <h3 class="programm__item-title">1 аниматор (Экспресс-поздравление)</h3>
+                            <p class="programm__item-count">- от 2500р / 15-20 мин</p>
+                        </div>
+                        <div class="programm__item">
+                            <h3 class="programm__item-title">1 аниматор</h3>
+                            <p class="programm__item-count">- 5000р / 1 час</p>
+                        </div>
+                        <div class="programm__item">
+                            <h3 class="programm__item-title">1 аниматор + ди-джей</h3>
+                            <p class="programm__item-count">- 7000р / 1 час</p>
+                        </div>
+                        <div class="programm__item">
+                            <h3 class="programm__item-title">1 аниматор (Экспресс-поздравление)</h3>
+                            <p class="programm__item-count">- от 2500р / 15-20 мин</p>
+                        </div>
+                        <div class="programm__item">
+                            <h3 class="programm__item-title">1 аниматор</h3>
+                            <p class="programm__item-count">- 5000р / 1 час</p>
+                        </div>
+                        <div class="programm__item">
+                            <h3 class="programm__item-title">1 аниматор + ди-джей</h3>
+                            <p class="programm__item-count">- 7000р / 1 час</p>
+                        </div>
+                        <div class="programm__item">
+                            <h3 class="programm__item-title">1 аниматор (Экспресс-поздравление)</h3>
+                            <p class="programm__item-count">- от 2500р / 15-20 мин</p>
+                        </div>
+                        <div class="programm__item">
+                            <h3 class="programm__item-title">1 аниматор</h3>
+                            <p class="programm__item-count">- 5000р / 1 час</p>
+                        </div>
+                        <div class="programm__item">
+                            <h3 class="programm__item-title">1 аниматор + ди-джей</h3>
+                            <p class="programm__item-count">- 7000р / 1 час</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="location">
+            <div class="container">
+                <div class="location__inner">
+                    <h2 class="location__title">Где мы можем провести детский праздник</h2>
+                    <div class="location__items">
+                        <div class="location__item">
+                            <img src="./img/location-1.webp" alt="" class="location__item-img">
+                        </div>
+                        <div class="location__item">
+                            <img src="./img/location-2.webp" alt="" class="location__item-img">
+                        </div>
+                        <div class="location__item">
+                            <img src="./img/location-1.webp" alt="" class="location__item-img">
+                        </div>
+                        <div class="location__item">
+                            <img src="./img/location-2.webp" alt="" class="location__item-img">
+                        </div>
+                        <div class="location__item">
+                            <img src="./img/location-1.webp" alt="" class="location__item-img">
+                        </div>
+                        <div class="location__item">
+                            <img src="./img/location-2.webp" alt="" class="location__item-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="info">
+            <div class="container">
+                <div class="info__inner">
+                    <header class="info__header">
+                        <h2 class="info__title">Почему заказать аниматора лучше у нас:</h2>
+                    </header>
+                    <div class="info__block">
+                        <header class="info__block-header">
+                            <h3 class="info__suptitle">Чем же мы отличаемся от других организаций?!?</h3>
+                            <button class="info__block-btn"></button>
+                        </header>
+                        <p class="info__text">Для начала хотелось бы сказать, что максимально правдивую информацию о том или ином агентстве организации праздников в Казани можно прочесть и понять только по отзывам! Мы всегда говорим своим клиентам, чтобы они ознакомились с нашими отзывами и с отзывами конкурентов, если человек в замешательстве или вообще первый раз заказывает аниматора. Для чего? Всё просто. Все отзывы о нашей работе и наших аниматоров, которые есть, написаны с душой, потому что мы никогда не просим и не уговариваем клиентов их писать. Если клиент действительно остаётся доволен, он сам напишет слова благодарности, и, поверьте, они будут отличаться от таких, как например: "Праздник прошёл хорошо! Спасибо!"</p>
+                    </div>
+                    <div class="info__block">
+                        <header class="info__block-header">
+                            <h3 class="info__suptitle">Так всё же, почему стоит заказать праздник именно у нас?</h3>
+                            <button class="info__block-btn"></button>
+                        </header>
+                        <p class="info__text">
+                            Мы получаем удовольствие от своей работы, поэтому всегда проводим праздники для детей с душой.
+                            Мы против однообразия! Наши игры и развлекательные программы всегда эксклюзивные, поэтому для каждого персонажа аниматора у нас неповторимый сценарий, разный реквизит, а также музыкальная подборка песен. Детки оказываются очень довольны, как в прочем и их родители. Мы можем удивлять Ваших детей каждый год разными программами.
+                            Опыт работы - очень важный показатель. У наших аниматоров опыт проведённых шоу программ достигает 10 лет. Начинающие или с недостающим опытом работы аниматоры в этой сфере проходят обучение у нас, ознакамливаются с нашими программами, и только после этого ребята начинают работать.
+                            Разнообразие персонажей - тоже не маловажный факт. У нас в наличии около 200 костюмов разных героев мультфильмов, фильмов и игр, и это число растёт с каждым месяцем
+                            Аниматоры работают с выездом на дом или любую вашу территорию.
+                        </p>
+                    </div>
+                    <div class="info__block">
+                        <header class="info__block-header">
+                            <h3 class="info__suptitle">Так всё же, почему стоит заказать праздник именно у нас?</h3>
+                            <button class="info__block-btn"></button>
+                        </header>
+                        <p class="info__text">
+                            Мы получаем удовольствие от своей работы, поэтому всегда проводим праздники для детей с душой.
+                            Мы против однообразия! Наши игры и развлекательные программы всегда эксклюзивные, поэтому для каждого персонажа аниматора у нас неповторимый сценарий, разный реквизит, а также музыкальная подборка песен. Детки оказываются очень довольны, как в прочем и их родители. Мы можем удивлять Ваших детей каждый год разными программами.
+                            Опыт работы - очень важный показатель. У наших аниматоров опыт проведённых шоу программ достигает 10 лет. Начинающие или с недостающим опытом работы аниматоры в этой сфере проходят обучение у нас, ознакамливаются с нашими программами, и только после этого ребята начинают работать.
+                            Разнообразие персонажей - тоже не маловажный факт. У нас в наличии около 200 костюмов разных героев мультфильмов, фильмов и игр, и это число растёт с каждым месяцем
+                            Аниматоры работают с выездом на дом или любую вашу территорию.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="additionally">
+            <div class="container">
+                <div class="additionally__inner">
+                    <header class="additionally__header">
+                        <h2 class="additionally__title">Дополнительные услуги</h2>
+                    </header>
+                    <div class="additionally__items">
+                        <a class="additionally__item">
+                            <img src="./img/characters-1.png" alt="" class="additionally__item-img">
+                            <h3 class="additionally__item-title">Школьный батл</h3>
+                        </a>
+                        <a class="additionally__item">
+                            <img src="./img/characters-2.png" alt="" class="additionally__item-img">
+                            <h3 class="additionally__item-title">Масленица</h3>
+                        </a>
+                        <a class="additionally__item">
+                            <img src="./img/characters-1.png" alt="" class="additionally__item-img">
+                            <h3 class="additionally__item-title">Гусь-обнимусь</h3>
+                        </a>
+                        <a class="additionally__item">
+                            <img src="./img/characters-2.png" alt="" class="additionally__item-img">
+                            <h3 class="additionally__item-title">Гравити Фолз</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="reviews">
+            <div class="container">
+                <div class="reviews__inner">
+                    <div class="reviews__top">
+                        <header class="reviews__header">
+                            <h2 class="reviews__title">Отзывы</h2>
+                        </header>
+                        <div class="reviews__btns">
+                            <button class="reviews__btn reviews__btn-prev reviews__slider-btn--prev"></button>
+                            <button class="reviews__btn reviews__btn-next reviews__slider-btn--next"></button>
+                        </div>
+                    </div>
+                    <div class="swiper reviews__slider">
+
+                        <div class="swiper-wrapper reviews__slider-wrapper">
+
+                            <div class="swiper-slide reviews__slider-slide">
+                                <img src="./img/woman.webp" alt="" class="reviews__item-img">
+                                <p class="reviews__item-text">Мы воспользовались услугами аниматора для дня рождения нашего сына и остались в восторге! Аниматор был профессиональным, вовремя пришел и мгновенно завлек детей. Они играли, пели и танцевали, а сын теперь не перестает вспоминать этот праздник. Рекомендуем!</p>
+                            </div>
+                            <div class="swiper-slide reviews__slider-slide">
+                                <img src="./img/woman-2.jpg" alt="" class="reviews__item-img">
+                                <p class="reviews__item-text">Недавно использовали сайт для поиска аниматора, и это было отличное решение! Качественная подборка аниматоров, мы выбрали чудесного клоуна, который устроил незабываемые игры и конкурсы. Все дети были в восторге, а родители довольны. Обязательно обратимся снова!</p>
+                            </div>
+                            <div class="swiper-slide reviews__slider-slide">
+                                <img src="./img/woman.webp" alt="" class="reviews__item-img">
+                                <p class="reviews__item-text">Прекрасный сайт с аниматорами! Мы наняли девушку в костюме принцессы для доченьки, и она просто великолепно справилась. Праздник прошел весело, дети были счастливы, а мама получила удовольствие от организации. Всем рекомендую!</p>
+                            </div>
+                            <div class="swiper-slide reviews__slider-slide">
+                                <img src="./img/woman-2.jpg" alt="" class="reviews__item-img">
+                                <p class="reviews__item-text">Приятное впечатление от сервиса. Аниматор, которого мы выбрали, был настоящим профессионалом — вовремя пришел, проводил много интересных игр и развлекал детей. Это действительно оправдало все ожидания. Обязательно повторим опыт в будущем!</p>
+                            </div>
+                            <div class="swiper-slide reviews__slider-slide">
+                                <img src="./img/woman.webp" alt="" class="reviews__item-img">
+                                <p class="reviews__item-text">Прекрасный сайт с аниматорами! Мы наняли девушку в костюме принцессы для доченьки, и она просто великолепно справилась. Праздник прошел весело, дети были счастливы, а мама получила удовольствие от организации. Всем рекомендую!</p>
+                            </div>
+                            <div class="swiper-slide reviews__slider-slide">
+                                <img src="./img/woman-2.jpg" alt="" class="reviews__item-img">
+                                <p class="reviews__item-text">Приятное впечатление от сервиса. Аниматор, которого мы выбрали, был настоящим профессионалом — вовремя пришел, проводил много интересных игр и развлекал детей. Это действительно оправдало все ожидания. Обязательно повторим опыт в будущем!</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        <section class="contacts">
+            <div class="container">
+                <div class="contacts__inner">
+                    <div class="contacts__left">
+                        <header class="contacts__header">
+                            <h2 class="contacts__title">Контакты</h2>
+                        </header>
+                        <address>
+                            <a href="" class="contacts__link">+7 987 654 32 12</a>
+                            <a href="" class="contacts__link">+7 987 654 32 12</a>
+                        </address>
+                        <h3 class="contacts__suptitle">Социальные сети</h3>
+                        <address>
+                            <a href="" class="contacts__link">animators_khv</a>
+                            <a href="" class="contacts__link">@AnimatorsKHV</a>
+                        </address>
+                    </div>
+                    <div class="contacts__right">
+                        <form class="contacts__form">
+                            <h3 class="contacts__form-title">Форма <span class="text-main">обратной связи</span></h3>
+                            <p class="contacts__form-text">Просто заполните форму, а наш специалист свяжется с вами в ближайшее время для уточнения деталей заказа</p>
+                            <div class="contacts__form-block">
+                                <label for="" class="contacts__form-lable">Имя*</label>
+                                <input type="text" class="contacts__form-input">
+                            </div>
+                            <div class="contacts__form-flex">
+                                <div class="contacts__form-block">
+                                    <label for="" class="contacts__form-lable">Телефон*</label>
+                                    <input type="tel" class="contacts__form-input">
+                                </div>
+                                <div class="contacts__form-block">
+                                    <label for="" class="contacts__form-lable">Электронная почта*</label>
+                                    <input type="email" class="contacts__form-input">
+                                </div>
+                            </div>
+                            <div class="contacts__form-block">
+                                <label for="" class="contacts__form-lable">Комментарий</label>
+                                <textarea type="text" class="contacts__form-textarea"></textarea>
+                            </div>
+                            <footer class="contacts__form-footer">
+                                <button class="contacts__form-btn main-btn">Отправить</button>
+                                <p class="contacts__form-warning">Нажимая на кнопку, вы подтверждаете,
+                                    что ознакомились с <a href="" class="text-main">пользовательским соглашением</a>и согласны с ним</p>
+                            </footer>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <address class="footer__adress">
+                    <a class="footer__adress-link" href="tel:+79876543212" target="_blank">+7 987 654 32 12</a>
+                    <a class="footer__adress-link" href="#" target="_blank" rel="noopener noreferrer" class="footer__link">animashki.kz@yandex.ru</a>
+                    <a class="footer__adress-link" href="#" target="_blank" rel="noopener noreferrer">http://vipanimator.ru</a>
+                    <p class="footer__adress-text" href="#" target="_blank" rel="noopener noreferrer">2006-2025</p>
+                </address>
+            </div>
+        </div>
+    </footer>
+
+    <dialog class="modal" id="dialog">
+        <form action="" class="modal__form">
+    
+            <header class="modal__form-header">
+                <h2 class="modal__form-title">Форма <span class="text-main">обратной связи</span></h2>
+            </header>
+    
+            <p class="modal__form-text">Просто заполните форму, а наш специалист свяжется с вами в ближайшее время для уточнения деталей заказа</p>
+    
+            <div class="modal__form-block">
+                <label for="" class="modal__form-lable">Имя*</label>
+                <input type="text" class="modal__form-input">
+            </div>
+            <div class="modal__form-flex">
+                <div class="modal__form-block">
+                    <label for="" class="modal__form-lable">Телефон*</label>
+                    <input type="tel" class="modal__form-input">
+                </div>
+                <div class="modal__form-block">
+                    <label for="" class="modal__form-lable">Электронная почта*</label>
+                    <input type="email" class="modal__form-input">
+                </div>
+            </div>
+            <div class="modal__form-block">
+                <label for="" class="modal__form-lable">Комментарий</label>
+                <textarea type="text" class="modal__form-textarea"></textarea>
+            </div>
+            <footer class="modal__form-footer">
+                <button type="submit" class="modal__form-btn main-btn">Отправить</button>
+                <p class="modal__form-warning">Нажимая на кнопку, вы подтверждаете,
+                    что ознакомились с <a href="" class="text-main">пользовательским соглашением</a>и согласны с ним</p>
+            </footer>
+            
+            <button type="button" onclick="dialog.close()" class="modal__form-btn--close"></button>
+        </form>
+    </dialog> 
+
+    <script src="./js/swiper.js"></script>
+    <script src="./js/script.js"></script>
+    <script> 
+        const menu = document.querySelector(".header__menu");
+        const menuBtnOpen = document.querySelector(".header__btn");
+
+        menuBtnOpen.addEventListener('click', () => {
+            if (menu.open) {
+                menu.show()
+            } 
+        })
+
+        window.addEventListener("wheel", (evnt) => {
+        if (evnt.deltaY > 0) {
+            menu.close()
+        } 
+    })
+        
+    </script>
+</body>
+
+
+</html>

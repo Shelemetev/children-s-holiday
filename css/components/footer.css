@@ -1,0 +1,37 @@
+.footer {
+  background-color: var(--main-color);
+  padding: calc(var(--indent) * 6) 0;
+  position: relative;
+}
+.footer::after {
+  content: " ";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--text-color);
+}
+.footer__adress {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer__adress-link {
+  color: var(--text-color);
+  transition: 0.4s;
+  font-size: var(--text);
+}
+.footer__adress-link:hover {
+  color: var(--secondary-color);
+}
+.footer__adress-text {
+  color: var(--text-color);
+  transition: 0.4s;
+  font-size: var(--text);
+  cursor: pointer;
+}
+.footer__adress-text:hover {
+  color: var(--secondary-color);
+}/*# sourceMappingURL=footer.css.map */

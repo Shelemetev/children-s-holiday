@@ -1,0 +1,37 @@
+.footer {
+    background-color: var(--main-color);
+    padding: calc(var(--indent) * 6) 0;
+    position: relative;
+    &::after {
+        content: " ";
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: var(--text-color);
+    }
+    &__adress {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &-link {
+            color: var(--text-color);
+            transition: 0.4s;
+            font-size: var(--text);
+            &:hover {
+                color: var(--secondary-color);
+            }
+        }
+        &-text {
+            color: var(--text-color);
+            transition: 0.4s;
+            font-size: var(--text);
+            cursor: pointer;
+            &:hover {
+                color: var(--secondary-color);
+            }
+        }
+    }
+}

@@ -1,0 +1,125 @@
+@property --black-main {
+    syntax: '<color>';
+    initial-value: oklch(46.44% 0.1621 349.48);
+    inherits: false;
+}
+
+@property --black-color {
+    syntax: '<color>';
+    initial-value: oklch(0% 0 0 );
+    inherits: false;
+}
+
+@property --black-opacity {
+    syntax: '<color>';
+    initial-value: oklch(4.12% 0.0169 349.48 / 30%);
+    inherits: false;
+}
+
+@property --main-color {
+    syntax: '<color>';
+    initial-value: oklch(58.86% 0.1443 354.42);
+    inherits: false;
+}
+
+@property --secondary-color {
+    syntax: '<color>';
+    initial-value: oklch(85.75% 0.091 350.5);
+    inherits: false;
+}
+
+@property --text-color {
+    syntax: '<color>';
+    initial-value: oklch(78.52% 0.1246 30.35);
+    inherits: false;
+}
+
+@property --text-color-opacity {
+    syntax: '<color>';
+    initial-value: oklch(78.52% 0.1246 30.35 / 30%);
+    inherits: false;
+}
+
+@property --accent-color {
+    syntax: '<color>';
+    initial-value: oklch(79.09% 0.1532 128.06);
+    inherits: false;
+}
+
+@property --accent-color-opaticy {
+    syntax: '<color>';
+    initial-value: oklch(79.09% 0.1532 128.06 / 50%);
+    inherits: false;
+}
+
+@property --white-color {
+    syntax: '<color>';
+    initial-value: oklch(97.05% 0.0169 349.48);
+    inherits: false;
+}
+
+@property --grey-color {
+    syntax: '<color>';
+    initial-value: oklch(87.09% 0 0);
+    inherits: false;
+}
+
+@property --white-main {
+    syntax: '<color>';
+    initial-value: oklch(97.94% 0.0148 216.7);
+    inherits: false;
+}
+
+@property --grey-color {
+    syntax: '<color>';
+    initial-value: oklch(87.98% 0 0);
+    inherits: false;
+}
+
+@property --indent {
+    syntax: '<length>';
+    initial-value: 3px;
+    inherits: true;
+}
+
+@property --padding-block {
+    syntax: '<length>';
+    initial-value: 3px;
+    inherits: false;
+}
+
+@property --gap {
+    syntax: '<length>';
+    initial-value: 3px;
+    inherits: false;
+}
+
+@property --title-block {
+    syntax: '<length>';
+    initial-value: 3px;
+    inherits: false;
+}
+
+@property --suptitle-block {
+    syntax: '<length>';
+    initial-value: 3px;
+    inherits: false;
+}
+
+@property --text {
+    syntax: '<length>';
+    initial-value: 0px;
+    inherits: false;
+}
+
+@property --margin-block {
+    syntax: '<length>';
+    initial-value: 0px;
+    inherits: false;
+}
+
+@property --margin-text {
+    syntax: '<length>';
+    initial-value: 0px;
+    inherits: false;
+}
